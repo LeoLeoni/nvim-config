@@ -20,11 +20,13 @@ map("n", "<leader>:", ":bprev<cr>", noremap)
 
 
 
+-- TODO revisit these
 -- Telescope keybindings
-map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>", silent)
+map("n", "<space>ff", "<cmd>lua require('telescope.builtin').fd()<cr>", silent)
 map("n", "<leader>fs", "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>", silent)
 map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').lsp_references()<cr>", silent)
-map("n", "<space>fa", "<cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<cr>", silent)
+map("n", "<space>fw", "<cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<cr>", silent)
+map("n", "<space>fa", "<cmd>lua require('telescope.builtin').live_grep()<cr>", silent)
 
 -- Tab switching
 map('n', '<leader>1', '<cmd>BufferLineGoToBuffer 1<CR>', silent)
@@ -38,10 +40,10 @@ map('n', '<leader>8', '<cmd>BufferLineGoToBuffer 8<CR>', silent)
 map('n', '<leader>9', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
 
 map('n', '<leader>w', ':bdelete<CR>', silent)
-map('n', '<leader>l', ':noh<CR>', silent)
+map('n', '<leader>l', ':noh<CR>', silent) -- clears highlighed search
 
 -- Auto close brackets
--- TODO figure out how to close
+-- TODO figure out how to close the way that vscode does
 -- map('i', '{', '{}<left>', noremap)
 -- map('i', '[', '[]<left>', noremap)
 -- map('i', '(', '()<left>', noremap)
