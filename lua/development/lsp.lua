@@ -20,3 +20,12 @@ lspconfig.jsonls.setup {}
 lspconfig.cssls.setup {}
 lspconfig.kotlin_language_server.setup {}
 
+-- require("null-ls").setup({
+--     sources = {
+--         require("null-ls").builtins.formatting.stylua,
+--         require("null-ls").builtins.diagnostics.ktlint,
+--         require("null-ls").builtins.formatting.ktlint,
+--         require("null-ls").builtins.diagnostics.eslint_d,
+--         require("null-ls").builtins.formatting.prettierd,
+--     },
+-- })

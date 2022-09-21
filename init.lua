@@ -38,3 +38,4 @@ require('telescope-settings')
 require('theming/aesthetics')
 
 require('nvim-tree').setup()
+require('nvim-autopairs').setup()

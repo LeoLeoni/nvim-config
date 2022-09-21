@@ -7,6 +7,7 @@ use 'wbthomason/packer.nvim'
 -- Essentials
 use 'tpope/vim-repeat'
 use 'tpope/vim-surround'
+-- use 'airblade/vim-rooter'
 use 'nvim-lualine/lualine.nvim'
 use 'nvim-lua/plenary.nvim'
 use 'nvim-lua/popup.nvim'
@@ -15,6 +16,7 @@ use 'nvim-telescope/telescope-fzy-native.nvim'
 use 'kyazdani42/nvim-tree.lua'
 use 'b3nj5m1n/kommentary' -- code commentating
 use 'nvim-treesitter/nvim-treesitter' -- better syntax highlighting
+use 'windwp/nvim-autopairs'
 
 
 -- Debugging
@@ -35,6 +37,7 @@ use 'onsails/lspkind-nvim'
 use 'norcalli/nvim-colorizer.lua'
 use 'L3MON4D3/LuaSnip'
 use 'glepnir/lspsaga.nvim' -- Code actions (i.e. "Import from ___")
+-- use 'jose-elias-alvarez/null-ls.nvim' -- used for saving and stuff
 
 -- Themeing
 use 'kyazdani42/nvim-web-devicons'
