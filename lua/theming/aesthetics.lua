@@ -34,6 +34,7 @@ require'bufferline'.setup{
 }
 
 require('satellite').setup()
+require('todo-comments').setup() -- this isn't quite working
 
 -- require('colorizer').setup(nil, { css = true; })
 

@@ -18,7 +18,7 @@ map("n", "<C-k>", "<C-w>k", noremap)
 map("n", "<leader>;", ":bnext<cr>", noremap)
 map("n", "<leader>:", ":bprev<cr>", noremap)
 
-
+map("n", "<C-n>", ":NvimTreeToggle<CR>", silent)
 
 -- TODO revisit these
 -- Telescope keybindings

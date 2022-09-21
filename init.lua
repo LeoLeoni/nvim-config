@@ -15,6 +15,11 @@ opt.encoding = 'utf-8'
 opt.splitbelow = true
 opt.splitright = true
 
+-- Folding settings TODO look up these commands
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- opt.foldlevelstart = 20
+
 -- Tab size for ts development
 vim.api.nvim_create_autocmd({"FileType"}, {pattern = {"typescriptreact", "javascript", "typescript", "scss"}, command = "set tabstop=2"})
 vim.api.nvim_create_autocmd({"FileType"}, {pattern = {"typescriptreact", "javascript", "typescript", "scss"}, command = "set shiftwidth=2"})
@@ -28,7 +33,8 @@ require('development/lsp')
 require('development/lspsaga-setup')
 require('development/cmp-setup')
 
-require('theming/aesthetics')
 require('theming/treesitter')
 require('telescope-settings')
+require('theming/aesthetics')
 
+require('nvim-tree').setup()

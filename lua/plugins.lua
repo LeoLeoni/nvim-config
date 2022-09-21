@@ -43,6 +43,7 @@ use 'akinsho/bufferline.nvim'
 use 'lewis6991/satellite.nvim'
 use 'tiagovla/tokyodark.nvim'
 use 'folke/tokyonight.nvim'
+use 'folke/todo-comments.nvim'
 
 
 end)
