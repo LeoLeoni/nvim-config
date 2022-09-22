@@ -7,7 +7,7 @@ use 'wbthomason/packer.nvim'
 -- Essentials
 use 'tpope/vim-repeat'
 use 'tpope/vim-surround'
--- use 'airblade/vim-rooter'
+use 'airblade/vim-rooter'
 use 'nvim-lualine/lualine.nvim'
 use 'nvim-lua/plenary.nvim'
 use 'nvim-lua/popup.nvim'
