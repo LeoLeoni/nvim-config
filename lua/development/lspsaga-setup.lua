@@ -22,8 +22,8 @@ map("n", "K", "<cmd>Lspsaga hover_doc<cr>", opts)
 -- map("n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
 
 -- Lsp Keymaps
--- map('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
--- map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+map('n', 'gd', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+-- map('n', 'gD', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
 -- map('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
 -- map('n', '<space>wa', '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opts)
 -- map('n', '<space>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opts)

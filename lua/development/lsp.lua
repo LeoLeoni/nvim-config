@@ -14,18 +14,21 @@ require("mason-lspconfig").setup {
 -- LSP servers
 local lspconfig = require('lspconfig')
 lspconfig.sumneko_lua.setup { settings = { Lua = { diagnostics = { globals = { 'vim' } } } } }
-lspconfig.tsserver.setup {}
+lspconfig.tsserver.setup {
+	-- Fix issue where ts servers would infinitely spawn? 
+	init_options = { maxTsServerMemory = 4096 } 
+}
 lspconfig.vimls.setup {}
 lspconfig.jsonls.setup {}
 lspconfig.cssls.setup {}
 lspconfig.kotlin_language_server.setup {}
 
--- require("null-ls").setup({
---     sources = {
---         require("null-ls").builtins.formatting.stylua,
---         require("null-ls").builtins.diagnostics.ktlint,
---         require("null-ls").builtins.formatting.ktlint,
---         require("null-ls").builtins.diagnostics.eslint_d,
---         require("null-ls").builtins.formatting.prettierd,
---     },
--- })
+require("null-ls").setup({
+    sources = {
+        require("null-ls").builtins.formatting.stylua,
+        require("null-ls").builtins.diagnostics.ktlint,
+        require("null-ls").builtins.formatting.ktlint,
+        -- require("null-ls").builtins.diagnostics.eslint_d,
+        require("null-ls").builtins.formatting.prettierd,
+    },
+})

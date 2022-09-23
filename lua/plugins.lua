@@ -37,14 +37,16 @@ use 'onsails/lspkind-nvim'
 use 'norcalli/nvim-colorizer.lua'
 use 'L3MON4D3/LuaSnip'
 use 'glepnir/lspsaga.nvim' -- Code actions (i.e. "Import from ___")
--- use 'jose-elias-alvarez/null-ls.nvim' -- used for saving and stuff
+use 'jose-elias-alvarez/null-ls.nvim' -- used for saving and stuff
+use 'sbdchd/neoformat' -- for autoformatting
 
 -- Themeing
 use 'kyazdani42/nvim-web-devicons'
-use 'ful1e5/onedark.nvim'
+use 'navarasu/onedark.nvim'
 use 'akinsho/bufferline.nvim'
 use 'lewis6991/satellite.nvim'
 use 'tiagovla/tokyodark.nvim'
+use 'catppuccin/nvim'
 use 'folke/tokyonight.nvim'
 use 'folke/todo-comments.nvim'
 

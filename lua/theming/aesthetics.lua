@@ -5,12 +5,15 @@ opt.termguicolors = true
 opt.background = "dark"
 
 
--- require('onedark').setup {}
+require('onedark').setup { style = 'darker' }
+-- require('onedark').load()
 vim.g.tokyonight_style = "night"
 vim.g.tokyodark_transparent_background = 0
 vim.g.tokyodark_enable_italic_comment = 1
 vim.g.tokyodark_enable_italic = 1
 vim.g.tokyodark_color_gamma = "1.0"
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
+require("catppuccin").setup()
 
 vim.cmd [[colorscheme tokyonight-night]]
 require'lualine'.setup {
