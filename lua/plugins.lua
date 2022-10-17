@@ -13,7 +13,9 @@ use 'nvim-lua/plenary.nvim'
 use 'nvim-lua/popup.nvim'
 use 'nvim-telescope/telescope.nvim'
 use 'nvim-telescope/telescope-fzy-native.nvim'
-use 'kyazdani42/nvim-tree.lua'
+-- use 'kyazdani42/nvim-tree.lua'
+use({"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}) -- sequel to nvim-tree
+use 'MunifTanjim/nui.nvim'
 use 'b3nj5m1n/kommentary' -- code commentating
 use 'nvim-treesitter/nvim-treesitter' -- better syntax highlighting
 use 'windwp/nvim-autopairs'
@@ -48,6 +50,7 @@ use 'lewis6991/satellite.nvim'
 use 'tiagovla/tokyodark.nvim'
 use 'catppuccin/nvim'
 use 'folke/tokyonight.nvim'
+-- use 'folke/trouble.nvim'
 use 'folke/todo-comments.nvim'
 
 

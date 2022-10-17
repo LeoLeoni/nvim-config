@@ -32,10 +32,12 @@ require('keymappings')
 require('development/lsp')
 require('development/lspsaga-setup')
 require('development/cmp-setup')
+require('development/neo-tree-setup')
 
 require('theming/treesitter')
 require('telescope-settings')
 require('theming/aesthetics')
 
-require('nvim-tree').setup()
 require('nvim-autopairs').setup()
+
+vim.g.rooter_targets = 'README.md' -- hack to keep nvim rooter from changing directories all the time

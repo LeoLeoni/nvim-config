@@ -37,7 +37,11 @@ require'bufferline'.setup{
 }
 
 require('satellite').setup()
-require('todo-comments').setup() -- this isn't quite working
+require('todo-comments').setup {
+	search = {
+		pattern = [[\b(KEYWORDS)\b]]
+	}
+}
 
 -- require('colorizer').setup(nil, { css = true; })
 

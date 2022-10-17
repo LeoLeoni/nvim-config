@@ -16,7 +16,7 @@ local lspconfig = require('lspconfig')
 lspconfig.sumneko_lua.setup { settings = { Lua = { diagnostics = { globals = { 'vim' } } } } }
 lspconfig.tsserver.setup {
 	-- Fix issue where ts servers would infinitely spawn? 
-	init_options = { maxTsServerMemory = 4096 } 
+	init_options = { maxTsServerMemory = 4096 }
 }
 lspconfig.vimls.setup {}
 lspconfig.jsonls.setup {}
