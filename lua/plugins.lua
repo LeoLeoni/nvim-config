@@ -13,7 +13,6 @@ use 'nvim-lua/plenary.nvim'
 use 'nvim-lua/popup.nvim'
 use 'nvim-telescope/telescope.nvim'
 use 'nvim-telescope/telescope-fzy-native.nvim'
--- use 'kyazdani42/nvim-tree.lua'
 use({"nvim-neo-tree/neo-tree.nvim", branch = "v2.x"}) -- sequel to nvim-tree
 use 'MunifTanjim/nui.nvim'
 use 'b3nj5m1n/kommentary' -- code commentating
@@ -44,7 +43,7 @@ use 'sbdchd/neoformat' -- for autoformatting
 
 -- Themeing
 use 'kyazdani42/nvim-web-devicons'
-use 'navarasu/onedark.nvim'
+-- use 'navarasu/onedark.nvim'
 use 'akinsho/bufferline.nvim'
 use 'lewis6991/satellite.nvim'
 use 'tiagovla/tokyodark.nvim'
