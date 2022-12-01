@@ -22,6 +22,7 @@ lspconfig.vimls.setup {}
 lspconfig.jsonls.setup {}
 lspconfig.cssls.setup {}
 lspconfig.kotlin_language_server.setup {}
+lspconfig.rust.setup {}
 
 require("null-ls").setup({
     sources = {
