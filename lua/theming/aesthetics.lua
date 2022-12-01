@@ -15,21 +15,21 @@ vim.g.tokyodark_color_gamma = "1.0"
 vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 require("catppuccin").setup {
 	color_overrides = {
-		latte = {
-			rosewater = "#E8B5AA",
-			flamingo = "#E7A2A2",
-			pink = "#EF9CD9",
-			mauve = "#A96FF3",
-			red = "#E24D70",
-			maroon = "#E8727F",
-			peach = "#FC8B49",
-			yellow = "#ECB866",
-			green = "#73C166",
-			teal = "#55BAB7",
-			sky = "#46C0E8",
-			sapphire = "#4AB3D0",
-			blue = "#538DF7",
-			lavender = "#93A2FD",
+		mocha = { -- 10% more saturation
+			rosewater = "#f5ccc4",
+			flamingo = "#f2b6b6",
+			pink = "#f5a9e1",
+			mauve = "#bd8df7",
+			red = "#f27296",
+			maroon = "#eb8899",
+			peach = "#faa46e",
+			yellow = "#fada96",
+			green = "#91e38a",
+			teal = "#7de3d2",
+			sky = "#71d9eb",
+			sapphire = "#5cbfed",
+			blue = "#70a5fa",
+			lavender = "#9ca9ff",
 		}
 	}
 }
