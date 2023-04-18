@@ -24,6 +24,7 @@ opt.splitright = true
 vim.api.nvim_create_autocmd({"FileType"}, {pattern = {"typescriptreact", "javascript", "typescript", "scss"}, command = "set tabstop=2"})
 vim.api.nvim_create_autocmd({"FileType"}, {pattern = {"typescriptreact", "javascript", "typescript", "scss"}, command = "set shiftwidth=2"})
 vim.api.nvim_create_autocmd({"FileType"}, {pattern = {"typescriptreact", "javascript", "typescript", "scss", "kotlin"}, command = "set expandtab"})
+vim.api.nvim_create_autocmd({"BufWritePre"}, {pattern = {"*.ts", "*.tsx"}, command = "Neoformat"})
 
 -- Config packages
 require('plugins')

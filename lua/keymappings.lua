@@ -29,8 +29,11 @@ map("n", "<leader>fr", "<cmd>lua require('telescope.builtin').lsp_references()<c
 map("n", "<leader>fs", "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>", silent)
 map("n", "<leader>fa", "<cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<cr>", silent)
 
-map("n", "<leader>gd", "<cmd>lua require('telescope.builtin').lsp_definitions()>", silent)
+map("n", "<leader>gd", "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>", silent)
 
+map("n", "<leader>td", "<cmd>TodoTrouble<cr>", silent)
+map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", silent)
+map("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", silent)
 -- Tab switching
 map('n', '<leader>1', '<cmd>BufferLineGoToBuffer 1<CR>', silent)
 map('n', '<leader>2', '<cmd>BufferLineGoToBuffer 2<CR>', silent)
@@ -44,7 +47,4 @@ map('n', '<leader>9', '<cmd>BufferLineGoToBuffer 9<CR>', silent)
 
 map('n', '<leader>w', ':bdelete<CR>', silent) -- revisit this
 map('n', '<leader>l', ':noh<CR>', silent) -- clears highlighed search
-
--- map('n', ':w', ':Neoformat<CR>:w<CR>', silent)
-map('n', '<cmd>wf', '<cmd>Neoformat<CR><cmd>:w<CR>', silent)
 

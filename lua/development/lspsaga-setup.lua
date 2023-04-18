@@ -1,7 +1,7 @@
 local saga = require 'lspsaga'
 
 -- use default config
-saga.init_lsp_saga()
+saga.setup({})
 
 
 local map = vim.api.nvim_set_keymap
