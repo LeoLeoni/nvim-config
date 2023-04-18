@@ -1,41 +1,44 @@
 local plugins = {
   {
-    "neovim/nvim-lspconfig",
+    'neovim/nvim-lspconfig',
     dependencies = {
       "jose-elias-alvarez/null-ls.nvim",
       config = function()
         require "custom.configs.null-ls"
       end,
-   },
+    },
     config = function ()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
-    end
+      require 'plugins.configs.lspconfig'
+      require 'custom.configs.lspconfig'
+    end,
   },
   {
-    "nvim-treesitter/nvim-treesitter",
+    'nvim-treesitter/nvim-treesitter',
     opts = {
       ensure_installed = {
-        "lua",
-        "typescript",
-        "tsx",
-        "javascript",
-        "json",
-        "scss",
-        "kotlin",
+        'lua',
+        'javascript',
+        'typescript',
+        'tsx',
+        'json',
+        'kotlin',
+        'scss'
       }
     }
   },
   {
-    "williamboman/mason.nvim",
+    'williamboman/mason.nvim',
     opts = {
       ensure_installed = {
-        "typescript-language-server",
-        "prettierd",
-        "eslint_d",
-        "ktlint",
+        'typescript-language-server',
+        'lua-language-server',
+        --'eslint-lsp',
+        'eslint_d',
+        'json-lsp',
+        'ktlint',
+        'prettier',
       }
     }
-  },
+  }
 }
 return plugins

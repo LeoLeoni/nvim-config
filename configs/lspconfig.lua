@@ -1,13 +1,19 @@
-local on_attach = require("plugins.configs.lspconfig").on_attach
-local capabilities = require("plugins.configs.lspconfig").capabilities
+local on_attach = require('plugins.configs.lspconfig').on_attach
+local capabilities = require('plugins.configs.lspconfig').capabilities
 
-local lspconfig = require "lspconfig"
+local lspconfig = require 'lspconfig'
 
 lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"typescriptreact, typescript"},
   init_options = {
-    maxTsServerMemory = 4096
+    hostinfo = 'neovim',
+    maxTsServerMemory = 4096,
+    filetypes = {"typescriptreact, typescript"},
+    plugins = {
+      { name = 'typescript-plugin-css-modules' }
+    }
   }
 })
+
+lspconfig.kotlin_language_server.setup {}
