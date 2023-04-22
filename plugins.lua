@@ -22,7 +22,8 @@ local plugins = {
         'tsx',
         'json',
         'kotlin',
-        'scss'
+        'scss',
+        'rust'
       }
     }
   },
@@ -37,6 +38,8 @@ local plugins = {
         'json-lsp',
         'ktlint',
         'prettier',
+        'rust-analyzer',
+        'stylua',
       }
     }
   }
