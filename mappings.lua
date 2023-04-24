@@ -3,8 +3,10 @@ local M = {}
 -- Disables nvchad default keymappings
 M.disabled = {
   n = {
-    ["<leader>fw"] = "",
-  }
+    ["<leader>fw"] = "", -- replaced with fg
+    ["<leader>n"] = "", -- nvchad defaults for set number and relativenumber. Never changing.
+    ["<leader>rn"] = "",
+  },
 }
 
 M.general = {
