@@ -42,6 +42,10 @@ local plugins = {
         'stylua',
       }
     }
+  },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = require "custom.configs.nvimtree",
   }
 }
 return plugins
