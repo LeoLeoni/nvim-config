@@ -1,5 +1,2 @@
 # nvim-config
-TODO
-- [ ] Figure out folding
-- [ ] Tree view of code
-- [ ] Track recent files
+neovim config based on [NvChad](https://github.com/NvChad/NvChad)
